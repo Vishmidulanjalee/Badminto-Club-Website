@@ -1,0 +1,11 @@
+.foot{
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    background-color: rgb(156, 158, 18);
+    color: black;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    position: relative;
+}

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="refresh" content="4, file:///C:/Users/ADMIN/OneDrive%20-%20Informatics%20Institute%20of%20Technology/Desktop/Web_Development%20CW%2020222031_W1985690/web%20home%202/home.html">
+   
+    
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- The page will be refreshed in four seconds -->
+    <title>Presentation</title>
+
+    <style>
+
+        table, th {
+            width: auto;
+            padding: 80px;
+            padding-bottom: 20px;
+            padding-top: 20px;
+        }
+
+        td {
+            width: auto;
+            text-align: center;
+            height: 50px;
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            color: black;
+            font-size: larger;
+            vertical-align: middle;
+            background-color: rgba(224, 234, 238, 0.5);
+            /* The transparency of the  background color in the table data is set to 50% */
+
+        }
+
+        #tableContainer {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            color: aliceblue;
+        }
+
+        .circleImage {
+
+            width: 200px;
+            height: 200px;
+            /* Gives each of the images the same height and width */
+            border-radius: 50%;
+            /* Makes the image circular */
+            transition: transform 0.1s ease-in-out;
+            /* The transform rate of the image is set to 0.1 seconds which is the rate of which the image is going to expand */
+
+        }
+
+        body {
+            background-image: url("Images/newBackground.jpg");
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center center;
+        }
+         
+        
+        .circleImage:hover {
+            transform: scale(1.2);
+            /* The scale of which the image will be increased when the mouse is hovered over the image */
+        }
+
+    </style>
+</head>
+<body>
+    <div id="tableContainer">
+    <table >
+        <tr>
+            <!-- The images have been entered to the table header -->
+            <th><img src="Images/vishmiPic.jpg" alt="VishmiPic" class="circleImage" ></th>
+            <th><img src="Images/rithik.jpg" alt="rithikPic" class="circleImage"></th>
+            <th> <img src="Images/kavishkarAvatar.png" alt="KavishkarPic" class="circleImage"></th>
+            
+        </tr>
+        <!-- The rest of the information of the students will be added to the table data -->
+        <tr>
+            <td>Student 3</td>
+            <td>Student 1</td>
+            <td>Student 2</td>
+           
+        </tr>
+        <tr>
+            <td>Vishmi Dulanjali</td>
+            <td>Rithik Felecian Perera</td>
+            <td>Kavishkar Rajendran</td>
+            
+        </tr>
+        <tr>
+            <td>w1985690</td>
+            <td>w1985685</td>
+            <td>w1985533</td>
+            
+        </tr>
+        <tr>
+            <td>20222031</td>
+            <td>20222011</td>
+            <td>20222068</td>
+            
+        </tr>
+    </table>
+</div>
+    
+</body>
+</html>

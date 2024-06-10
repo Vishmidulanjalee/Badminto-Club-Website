@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Rate Us - La Guitar</title>
+    <link rel="stylesheet" href="Form.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <Script src="Form.js"></Script>
+    
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Gloock&display=swap" rel="stylesheet">
+
+<!-- Linking the navigation bar stylesheet -->
+<link rel="stylesheet" type="text/css" href="header.css">
+
+<!--Linking with footer stylesheet-->
+<link rel="stylesheet"  href="footer.css">
+
+ <!-- fowntawesome icon -->
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+ integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+ crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+ <!-- linking ReturnUp btn -->
+ <link rel="stylesheet" href="ReturnUpBtn.css">
+
+
+</head>
+<body>
+
+    <a id="button">
+        <i class="fa-solid fa-angle-up"></i>
+    </a>
+
+    <video autoplay loop class="video-background" muted plays-inline>
+        <source src="BGvideo.mp4" type="video/mp4">
+    </video>
+
+    <nav id="top">
+        <a href="home.html">
+            <img class= "logo"  src="EliteTitleLogo.png" alt="Elite Badminton Club">
+        </a>
+
+        <!--menu items-->          
+        <ul>
+            <li><a href="../web home 2/home.html">HOME</a></li>
+            <li><a href="../Buy Products.html">SHOP</a></li>
+            <li><a href="../CommentFormFinal/Form.html" class="selected">COMMENTS</a></li>
+            <li><a href="../Quiz/index.html">QUIZ</a></li>
+            <li><a href="../Our_Team/index.html">ABOUT US</a></li>
+        </ul>
+    </nav>
+ 
+        
+        <div class="container">
+            <h1>Comment Us</h1>
+            <p class="description">If you enjoyed your experience, we would greatly appreciate it if you could take a moment to rate us. Your feedback helps us improve and provide better service to our valued customers.</p>
+            <div class="contact-box">
+                <div class="contact-left">
+                    <h3>Rate Us</h3>
+
+                    <form action="https://formspree.io/f/myyapjpg"; method="post" >
+                       
+    
+                        <div class="input-row">
+                            <div class="input-group">
+                                <label for="name" class="required">Name</label>
+                                <input type="text" class="namePrompt" placeholder="John Amendo" id="name" name="Name" required oninvalid="this.setCustomValidity('Name Required')" oninput="this.setCustomValidity('')">
+                            </div>
+                            <div class="input-group">
+                                <label for="email" class="required">Email</label>
+                                <input type="email" class="emailPropmt" placeholder="john11@gmail.com" id="email" name="Email" required oninvalid="this.setCustomValidity('Email Required')" oninput="this.setCustomValidity('')">
+                            </div>
+                        </div>
+                        <section class="feedback">
+						<div class="feedback-text">    
+							<form id="formID" action="mailto: kavishkar22@gmail.com" method="post" enctype="text/plain">   
+								<h3> Your personal details</h3>
+									<label><input type="text" name="name" id="name" placeholder="Your name " required><br><br></label>
+									<label><input type="email" name="email" id="email" placeholder="Email adress " required><br><br></label>
+									<label><input type="text" name="phone" id="phone" placeholder="Phone number " required><br><br></label>
+								<h3>How satisied are you, with our website?<br>Choose from 0 to 10.</h3>
+								<label><input type="radio" name="satisfaction" value="0"> 0</label>
+								<label><input type="radio" name="satisfaction" value="1"> 1</label>
+								<label><input type="radio" name="satisfaction" value="2"> 2</label>
+								<label><input type="radio" name="satisfaction" value="3"> 3</label>
+								<label><input type="radio" name="satisfaction" value="4"> 4</label>
+								<label><input type="radio" name="satisfaction" value="5"> 5</label>
+								<label><input type="radio" name="satisfaction" value="6"> 6</label>
+								<label><input type="radio" name="satisfaction" value="7"> 7</label>
+								<label><input type="radio" name="satisfaction" value="8"> 8</label>
+								<label><input type="radio" name="satisfaction" value="9"> 9</label>
+								<label><input type="radio" name="satisfaction" value="10"> 10</label>
+								<script src="functionForm.js"></script>
+								</div>
+											
+                        <div class="input-row">
+                            <div class="input-group">
+                                <label class="required">Please could you tell us your reason for giving this rating ?</label>
+                                <textarea class="textPrompt" id="message" name="message" placeholder="Your Message"  required oninvalid="this.setCustomValidity('Test Required')" oninput="this.setCustomValidity('')"></textarea>
+                            <div class="input-group">
+                                <label for="Question01">What event in badminton are you interested in?</label>
+                                <select id="Question01" name="select">
+                                    <option value="Question01">--Please Select an event--</option>
+                                    <option value="Single event">Single event</option>                                   <option value="Single event">Double Event</option>
+                                    <option value="Both">Both</option>
+                               
+                                </select>
+                            </div>
+                        </div>
+                    <input class="subBtn" type="submit" id="submit-btn" value="SUBMIT" onmouseover="mouseOver()">
+                    </form>
+                </div>
+        </div>
+    
+        <div class="contact-right">
+            <h3>Reach Us</h3>
+    
+            <table>
+                <tr>
+                    <td>Email</td>
+                    <td>kavishkar22@gmail.com</td>
+                </tr>
+                <tr>
+                    <td>Phone</td>
+                    <td>+94 775240199</td>
+                </tr>
+                <tr>
+                    <td>Address </td>
+                    <td>
+                        Elite Badminton Club<br />
+                        No 210/8, <br />
+                        Galle Road,<br />
+                        Colombo.
+                    </td>
+                </tr>
+            </table>
+        </div>
+</div>
+    </div>
+
+    <div class="foot">
+        <p>Page edited by : <a href="../page editor Kavishkar 2/pageEditorKavishkar.html" target="_blank"> Kavishkar Rajendrakumar (2)</a> </p>
+        <p>2023 Elite Badminton Club &copy; All rights Reserved.</p>
+      </div>
+
+
+</body>
+</html>
